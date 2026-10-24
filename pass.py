@@ -1,5 +1,6 @@
+
 import string
-import random
+import secrets
 
 s1 = string.ascii_lowercase
 #print(s1)
@@ -17,6 +18,6 @@ s.extend(list(s2))
 s.extend(list(s3))
 s.extend(list(s4))
 #print(s)
-random.shuffle(s)
+secrets.SystemRandom().shuffle(s)
 #print(s)
 print("".join(s[0:plen]))
